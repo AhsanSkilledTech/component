@@ -1,0 +1,220 @@
+:root{
+    --main: #f99828;
+    --contrast: #18212e;
+}
+.slide{
+	position: relative;
+    z-index: 0;
+	padding: 200px 0px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.slide__bg{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    z-index: -1;
+}
+.slide__bg:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: -1;
+}
+.dark .slide__bg:before{
+    background-color: rgba(0, 0, 0, 0.70);
+}
+.slide__content{
+	position:relative;
+	z-index:1;
+    padding: 0 100px;
+}
+.slide__sub-h{
+    color: var(--main);
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all .4s ease-in-out .1s;
+}
+.slide__h{
+	position: relative;
+	color: #fff;
+	font-size: 64px;
+    line-height: 1.1;
+    font-weight: bold;
+    font-family: var(--nunito-sans);
+    margin-bottom: 40px;
+}
+.slide__p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.slide__btn{
+    background-color: var(--main);
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    width: fit-content;
+    padding: 20px 40px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--nunito-sans);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+.slide__btn:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.05);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    transform: scale(0.5, 1);
+    z-index: -1;
+}
+.slide__btn:hover::before {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+.bannrarr{
+    position: absolute;
+    background: var(--contrast);
+    height: 60px;
+    width: 60px;
+    color: #fff;
+    font-size: 20px;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+.bannrarr:hover{
+    background-color: var(--main);
+}
+@media(max-width:1599px){
+    .slide{
+        padding: 150px 0;
+    }
+    .slide__h{
+        font-size: 54px;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:1399px){
+    .slide{
+        padding: 100px 0;
+    }
+    .slide__sub-h{
+        font-size: 22px;
+    }
+    .slide__h{
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+    .slide__btn{
+        padding: 16px 30px;
+        font-size: 14px;
+    }
+    .bannrarr {
+        height: 50px;
+        width: 50px;
+        font-size: 14px;
+    }
+}
+@media(max-width:1199px){
+    .slide{
+        padding: 80px 0;
+    }
+    .slide__sub-h{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .slide__h{
+        font-size: 38px;
+        margin-bottom: 25px;
+    }
+    .slide__p{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .slide__btn{
+        padding: 14px 24px;
+        font-size: 13px;
+    }
+}
+@media(max-width:1023px){
+    .slide__content{
+        padding: 0 50px;
+    }
+}
+@media(max-width:767px){
+    .slide{
+        padding: 60px 0;
+    }
+    .bannrarr {
+        height: 40px;
+        width: 40px;
+        font-size: 14px;
+    }
+    .slide__content{
+        padding: 0 40px;
+    }
+    .slide__sub-h{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .slide__h{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .slide__p{
+        font-size: 15px;
+    }
+    .slide__btn{
+        padding: 14px 20px;
+        font-size: 12px;
+    }
+}
+@media(max-width:539px){
+    .slide__content{
+        padding: 0 0px;
+    }
+    .bannrarr{
+        top: auto !important;
+        bottom: 0 !important;
+        transform: translateY(-10px) !important;
+    }
+    .bannrarr1{
+        left: auto;
+        right: 60px !important;
+    }
+    .rtl .bannrarr1{
+        left: 10px !important;
+        right: auto !important;
+    }
+    .rtl .bannrarr2{
+        left: 60px !important;
+        right: auto !important;
+    }
+}
+.rtl .slide__content{
+    text-align: right;
+}
