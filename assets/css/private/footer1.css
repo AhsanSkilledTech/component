@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #628FA9;
+    --secondry-color: #1F3142;
+    --tertiary-color: #315B72;
+}
+.footer{
+    background-color: var(--secondry-color);
+    padding: 50px 0 30px 0;
+}
+.footer__logo{
+    width: 218px;
+    margin-bottom: 20px;
+}
+.footer__p{
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--gilroy);
+}
+.footer__h{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    font-family: var(--gilroy);
+}
+.footerbox{
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 25px;
+}
+.footerbox i{
+    color: #fff;
+    transform: translateY(3px);
+    font-size: 18px;
+}
+.footerbox span{
+    width: calc(100% - 40px);
+    font-size: 0.95rem;
+    color: #fff;
+    font-family: var(--gilroy);
+    font-weight: 500;
+}
+.ftrlist{
+    columns: 2;
+    color: white;
+    list-style: none;
+    padding-left: 0;
+}
+.ftrlist li{
+    margin-bottom: 5px;
+}
+.ftrlist li a{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+.ftrlist li a:hover{
+    text-decoration: underline;
+}
+.ftrsm{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.ftrsm li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.902);
+    border-radius: 4px;
+}
+.footerrow{
+    margin-bottom: 30px;
+}
+.footer-devider{
+    border-top: 1px solid rgba(255,255,255,0.6);
+}
+.footer-copyright {
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    font-weight: 500;
+    font-family: var(--gilroy);
+}
+@media(max-width:767px){
+    .footer__logo {
+        width: 140px;
+        margin-bottom: 10px;
+    }
+    .footer__p {
+        font-size: 0.7rem;
+    }
+    .footerrow{
+        row-gap: 40px;
+    }
+    .footer__h {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    .footerbox span {
+        font-size: 0.85rem;
+    }
+    .footerbox {
+        margin-bottom: 10px;
+    }
+    .footer {
+        padding: 35px 0 30px 0;
+    }
+}
