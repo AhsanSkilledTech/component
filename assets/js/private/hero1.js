@@ -14,17 +14,22 @@ var hero1 = new Swiper(".hero1", {
         clickable: true,
     },
 });
-$(".navbtn").click(function(){
-    $(this).toggleClass("active")
-    $(".navlist").slideToggle(400)
-})
-$("body").click(function(){
-    $(".navlist").slideUp(400)
-    $(".navbtn").removeClass("active")
-})
-$(".navbtn,.navlist").click(function(event){
-    event.stopPropagation();
-})
+
+if ($(window).innerWidth() <= 1023) {
+    $(".navbtn").click(function(){
+        $(this).toggleClass("active");
+        $(".navlist").slideToggle(400);
+    });
+    
+    $("body").click(function(){
+        $(".navlist").slideUp(400);
+        $(".navbtn").removeClass("active");
+    });
+    
+    $(".navbtn, .navlist").click(function(event){
+        event.stopPropagation();
+    });
+} 
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if (scroll >= 300) {

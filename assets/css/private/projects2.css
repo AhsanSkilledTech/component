@@ -1,0 +1,247 @@
+:root{
+    --main: #87ab42;
+    --contrast: #18212e;
+}
+.projects{
+    padding: 40px 0;
+}
+.projects__h6{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: var(--main);
+    font-weight: 700;
+    text-align: center;
+    font-family: var(--dm-sans);
+    text-transform: uppercase;
+}
+.projects__h2{
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: -2px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--dm-sans);
+}
+.dark .projects__h2{
+    color: #fefefe;
+}
+.projects_wrpr{
+    display: flex;
+    column-gap: 30px;
+}
+.proCard{
+    height: 520px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 0;
+}
+.proCard__img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.proCard::before {
+    content: "";
+    background: rgba(255,255,255,.4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    opacity: 1;
+    width: 0;
+    z-index: 0;
+}
+.proCard:hover:before {
+    left: 0;
+    right: 0;
+    opacity: 0;
+    width: auto;
+    transition: 0.8s ease;
+}
+.proCard::after {
+    content: "";
+    background: rgba(255,255,255,.6);
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    width: 0;
+    z-index: 0;
+}
+.proCard:hover:after {
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    width: auto;
+    transition: 0.8s ease;
+}
+.proCard-box{
+    position: absolute;
+    top:25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #ff6d2e;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    z-index: 2;
+    font-size: 1rem;
+    color: #fff;
+}
+.proCard:hover .proCard-box{
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+}
+.proCard__content{
+    padding: 40px 45px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg,#000 0%,rgba(0,0,0,0.01) 100%);
+    border-radius: 0 0 5px 5px;
+}
+.proCard__line{
+    width: 40px;
+    height: 2px;
+    background-color: var(--main);
+    margin-bottom: 20px;
+}
+.proCard__content-h6{
+    font-size: 0.96rem;
+    word-spacing: 0.3px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fefefe;
+    text-transform: uppercase;
+    font-family: var(--dm-sans);
+    margin-bottom: 3px;
+}
+.proCard__content-h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #fefefe;
+    font-family: var(--dm-sans);
+}
+.pro2sliderarr{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    color: var(--main);
+    box-shadow: 0 3px 20px 0 rgba(0,0,0,0.08);
+    font-size: 16px;
+}
+@media(max-width:1599px){
+    .proCard {
+        height: 430px;
+        border-radius: 5px;
+        position: relative;
+        z-index: 0;
+    }
+    .proCard__content {
+        padding: 30px 30px;
+    }
+    .proCard__content-h2 {
+        font-size: 1.3rem;
+    }
+    .proCard__content-h6 {
+        font-size: 0.9rem;
+    }
+    .projects__h2 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+}
+@media(max-width:1399px){
+    .projects__h6 {
+        font-size: 14px;
+    }
+    .projects__h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    .proCard {
+        height: 365px;
+    }
+    .proCard__line{
+        margin-bottom: 15px;
+    }
+    .proCard__content {
+        padding: 25px 20px;
+    }
+    .proCard__content-h6 {
+        font-size: 0.8rem;
+    }
+    .proCard__content-h2 {
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:1199px){
+    .projects_wrpr{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+}
+@media(max-width:1023px){
+
+}
+@media(max-width:767px){
+    .projects_wrpr {
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .proCard {
+        height: 325px;
+    }
+    .pro2sliderarr {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+@media(max-width:539px){
+    .projects__h6 {
+        font-size: 13px;
+    }
+    .projects__h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .projects_wrpr{
+        justify-content: center;
+    }
+    .proCard {
+        width: 290px;
+        height: 345px;
+        margin-inline: auto;
+    }
+    .proCard-box {
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .pro2sliderarr1{
+        left: 5px;
+    }
+    .pro2sliderarr2{
+        right: 5px;
+    }
+}
