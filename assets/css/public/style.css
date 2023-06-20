@@ -25,6 +25,7 @@ html{
   --lato: 'Lato', sans-serif;
   --dm-sans: 'DM Sans', sans-serif;
   --gilroy: 'Gilroy', sans-serif;
+  --cairo: 'Cairo', sans-serif;
   /* paragraph colors */
   --para-black: #000;
   --para-mid-black: #151515;
@@ -53,7 +54,7 @@ html{
   --dark-border-color1:#808080;
   --dark-border-color2:#343434;
   --dark-border-color3:#1c1c1c;
-  --dark-para-color: #999;
+  --dark-para-color: #cfcfcf;
 }
 body{
   padding: 0;

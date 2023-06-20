@@ -1,0 +1,156 @@
+.contsec {
+  padding: 100px 0;
+  background-color: #f3f6ff;
+}
+.contsec .heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--mid-black);
+}
+@media (max-width: 1599px) {
+  .contsec .heading {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 1399px) {
+  .contsec .heading {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 1199px) {
+  .contsec .heading {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 767px) {
+  .contsec .heading {
+    font-size: 1.3rem;
+  }
+}
+.contsec .heading--mb {
+  margin-bottom: 60px;
+}
+@media (max-width: 1399px) {
+  .contsec .heading--mb {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .contsec .heading--mb {
+    margin-bottom: 10px;
+  }
+}
+.contsec .row {
+  max-width: 1300px;
+  margin-inline: auto;
+}
+.contsec .row .contsec__box {
+  background-size: cover;
+}
+.contsec .row .contsecCard {
+  padding: 17px;
+}
+.contsec .row .contsecCard .contsecCard__h {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+@media (max-width: 1399px) {
+  .contsec .row .contsecCard .contsecCard__h {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1199px) {
+  .contsec .row .contsecCard .contsecCard__h {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .contsec .row .contsecCard .contsecCard__h {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+}
+.contsec .row .contsecCard form .form-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contsec .row .contsecCard form .form-control {
+  padding: 13px 15px;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+.contsec .row .contsecCard form .contsecCardbtn {
+  padding: 14px 23px;
+  background-color: #6d54eb;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-white);
+  border-radius: 5px;
+  box-shadow: 0 8px 20px -8px rgba(99, 102, 241, 0.9);
+  margin-bottom: 55px;
+}
+.contsec .row .contsecCard form .contsecCardbtn:hover {
+  box-shadow: none;
+}
+.contsec .row .contsecCard .contsecCard-subh {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.contsec .row .contsecCard .smlist {
+  padding-bottom: 20px;
+}
+.contsec .row .contsecCard .smlist .smlistBox {
+  width: 44px;
+  height: 44px;
+  background-color: #f3f6ff;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: var(--mid-black);
+}
+.contsec .row .contsecCard .smlist .smlistBox:hover {
+  background-color: #ea4335;
+  color: #fff;
+  box-shadow: 0 3px 18px -5px rgba(234, 67, 53, 0.8);
+}
+@media (max-width: 1599px) {
+  .contsec {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 1399px) {
+  .contsec {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 539px){
+
+}
+.dark .contsec .row .contsecCard form .contsecCardbtn,
+.dark .contsec .row .contsecCard .smlist .smlistBox,
+.dark .contsec .row .contsecCard form .form-control,
+.dark .contsec{
+  background-color: var(--dark-background-color1);
+}
+.dark .contsec .row .contsecCard .contsecCard-subh,
+.dark .contsec .row .contsecCard .smlist .smlistBox,
+.dark .contsec .row .contsecCard form .form-control,
+.dark .contsec .row .contsecCard form .form-label,
+.dark .contsec .row .contsecCard .contsecCard__h,
+.dark .contsec .heading{
+  color: #fff;
+}
+.dark .contsec .row .contsecCard{
+  background-color: var(--dark-background-color2);
+}
+.dark .contsec .row .contsecCard form .form-control{
+  border-color: transparent;
+}
+.dark .contsec .row .contsecCard .smlist .smlistBox,
+.dark .contsec .row .contsecCard form .contsecCardbtn{
+  box-shadow: none;
+}

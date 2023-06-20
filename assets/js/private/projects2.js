@@ -23,5 +23,5 @@ var pro2sl = new Swiper(".pro2sl", {
     1200: {
       slidesPerView: 4,
     },
-},
+  },
 });

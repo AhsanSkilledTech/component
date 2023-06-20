@@ -1,20 +1,3 @@
-
-$(".inputF").focus(function(){
-    $(this).nextAll('.form-input-sm-name').eq(0).show()
-})
-$(".inputF").focusout(function(){
-    $(this).nextAll('.form-input-sm-name').eq(0).hide()
-})
-// search button end
-$(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    if (scroll >= 600) {
-        $(".header").addClass("sticky animated fadeInDown");
-    } else {
-        $(".header").removeClass("sticky animated fadeInDown");
-    }
-})
-// sticky header end
 // language toggle start
 if (document.dir == "ltr") {
     $('.english').hide();
@@ -56,20 +39,3 @@ $('.lighton').click(function() {
 if (localStorage.getItem('darkClass') === 'true'){
     $('body').addClass('dark');
 }
-
-$(".mobileNavbtn").click(function(){
-    $(".mobileNav").toggleClass("active")
-})
-$(".nav-close").click(function(){
-    $(".mobileNav").removeClass("active")
-})
-$("body").click(function(){
-    $(".mobileNav").removeClass("active")
-})
-$(".mobileNavbtn, .mobileNav").click(function(event){
-    event.stopPropagation();
-})
-$(".mblnavdrpbtn").click(function(){
-    $(this).toggleClass("active")
-    $(".mobileNavlistDrp").slideToggle(200)
-})

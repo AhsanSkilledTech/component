@@ -346,3 +346,28 @@
         font-size: 22px;
     }
 }
+.rtl .banner-wrpr-p {
+    left: auto;
+    right: 0;
+    top: 0;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+}
+.dark .banner-wrpr-p{
+    opacity: 0.1;
+}
+.dark .about{
+    background-color: var(--dark-background-color1);
+}
+.dark .bannerbox1__abbox,
+.dark .qboxmini{
+    background-color: var(--dark-background-color2);
+}
+.dark .qbox__h,
+.dark .bannerbox2__h{
+    color: #fff;
+}
+.dark .qbox__link,
+.dark .bannerbox2__p{
+    color: var(--dark-para-color);
+}

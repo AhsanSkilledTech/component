@@ -1,5 +1,5 @@
 <!doctype html>
-<html dir="ltr">
+<html dir="rtl">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,318 +14,243 @@
 	<link href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css" rel="stylesheet">
 	<!-- fonts -->
 	<link href="assets/fonts/fonts.css" rel="stylesheet">
-	<!-- revolution slider  -->
-	<link href="assets/css/public/revolution-slider.css" rel="stylesheet">
 	<!-- Main Stylesheet File -->
 	<link href="assets/css/public/ahsan.css" rel="stylesheet">
 	<link href="assets/css/public/style.css" rel="stylesheet">
 	<link href="assets/css/private/header3.css" rel="stylesheet">
 </head>
-<body>
+<body style="height: 3600px;">
 	<header class="header">
-		<div class="headertop">
-			<div class="container">
-				<div class="headertop-wrpr flex-i justify-between">
-					<p class="headertop__p">Our <span class="text-contrast"> No Fee Promise </span>  Means, No Cost Until Your Case is Won.</p>
-					<div class="headertop__right flex-i">
-						<form action="" class="searchform">
-							<input type="text" class="headertop__input" placeholder="Search Here">
-							<button class="searchform__btn">
-								<i class="fa-solid fa-magnifying-glass"></i>
-							</button>
-						</form>
-						<div class="thmsett flex-i">
-							<div class="thmsett__sep"></div>
-							<div class="lang flex-a">
-								<div class="lang__box arabic flex-i">
-									<i class="fa-sharp fa-regular fa-language"></i>
-									<p class="lang__text">عربي</p>
-								</div>
-								<div class="lang__box english flex-i">
-									<i class="fa-sharp fa-regular fa-language"></i>
-									<p class="lang__text">English</p>
-								</div>
+		<div class="headrtop">
+			<div class="container-fluid">
+				<div class="headrtop-wrpr flex-i">
+					<div class="thmsett flex">
+						<div class="lang flex-a">
+							<div class="lang__box arabic">
+								<p class="lang__text">En</p>
 							</div>
-							<div class="thmsett__sep"></div>
-							<div class="darklight">
-								<div class="darklight__box lightoff">
-									<i class="fa-duotone fa-light-ceiling"></i>
-								</div>
-								<div class="darklight__box lighton">
-									<i class="fa-duotone fa-light-ceiling"></i>
-								</div>
+							<div class="lang__box english">
+								<p class="lang__text">Ar</p>
 							</div>
+						</div>
+						<div class="darklight">
+							<div class="darklight__box lightoff">
+								<i class="fa-regular fa-light-ceiling"></i>
+							</div>
+							<div class="darklight__box lighton">
+								<i class="fa-duotone fa-light-ceiling"></i>
+							</div>
+						</div>
+					</div>
+					<ul class="hdrsmlist flex-i">
+						<li class="hdrsmlist__item">
+							<a href="#" class="hdrsmlist__link flex-a">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+						</li>
+						<li class="hdrsmlist__item">
+							<a href="#" class="hdrsmlist__link flex-a">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</li>
+						<li class="hdrsmlist__item">
+							<a href="#" class="hdrsmlist__link flex-a">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</li>
+						<li class="hdrsmlist__item">
+							<a href="#" class="hdrsmlist__link flex-a">
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+						</li>
+						<li class="hdrsmlist__item">
+							<a href="#" class="hdrsmlist__link flex-a">
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<nav class="header-bottom">
+			<div class="container-fluid">
+				<div class="hdrbtm-wrpr flex-i">
+					<div class="mobileNavbtn">
+						<i class="fa-solid fa-bars-sort"></i>
+					</div>
+					<ul class="navlist flex-i">
+						<li class="navlist__item">
+							<a href="/" class="navlist__link active">
+								الرئيسية
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a href="#" class="navlist__link">
+								من نحن
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a href="#" class="navlist__link">
+								<span>جديد</span>
+								التدريب
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a href="#" class="navlist__link">
+								الإستشارات
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a href="#" class="navlist__link">
+								خدماتنا
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a href="#" class="navlist__link">
+								الفعاليات
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a href="#" class="navlist__link">
+								المدونة
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a href="#" class="navlist__link">
+								المعرض
+							</a>
+						</li>
+						<li class="navlist__item">
+							<a href="#" class="navlist__link">
+								تواصل معنا
+							</a>
+						</li>
+					</ul>
+					<div class="dropdown hdrbtmdrpbox">
+						<button type="button" class="hdrbtm__btn" data-bs-toggle="dropdown">
+							<i class="fa-solid fa-feather"></i>
+							<span>
+								إنضم كمتدرب و مستشار
+							</span>
+						</button>
+						<div class="dropdown-menu hdrbtnform">
+							<form action="">
+								<h2 class="hdrbtnform__hdng">إنضم وابدأ التدريب معنا</h2>
+								<div class="inputF__holder position-relative">
+									<input type="text" placeholder="الإسم كامل" class="form-control inputF">
+									<span class="form-input-sm-name">
+										<i class="fa-solid fa-check"></i>
+										الإسم كامل
+									</span>
+								</div>
+						
+								<div class="inputF__holder position-relative">
+									<input type="text" placeholder="البريد الإلكتروني" class="form-control inputF">
+									<span class="form-input-sm-name">
+										<i class="fa-solid fa-check"></i>
+										البريد الإلكتروني
+									</span>
+								</div>
+								<div class="inputF__holder position-relative">
+									<input type="text" placeholder="سنوات الخبرة" class="form-control inputF">
+									<span class="form-input-sm-name">
+										<i class="fa-solid fa-check"></i>
+										سنوات الخبرة
+									</span>
+								</div>
+								<div class="inputF__holder position-relative">
+									<input type="file" placeholder="أخري" class="form-control inputF">
+									<span class="form-input-sm-name">
+										<i class="fa-solid fa-check"></i>
+										أخري
+									</span>
+								</div>
+								<button type="submit" class="inputF__btn flex-a">
+									<i class="fa-solid fa-check"></i>
+									<i class="fa-duotone fa-spinner"></i>
+									<span>
+										إنضمام
+									</span>
+								</button>
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="hdrcntr">
-			<div class="container">
-				<div class="hdrcntr-wrpr flex-i">
-					<div class="hdrcntrbox hdrcntrbox1">
-						<p class="hdrcntrbox1__p">5648 VK 26th Lane - Florida 26154.</p>
-						<a href="#" class="hdrcntrbox1__h">+123.859.1263</a>
-					</div>
-					<a href="#" class="hdrcntrbox hdrcntrbox2">
-						<img src="assets/images/lawyer-justice-logo.png" alt="" class="hdrcntrbox2__img">
-					</a>
-					<div class="hdrcntrbox hdrcntrbox3">
-						<p class="hdrcntrbox1__p">Office Hours: 09.00am - 17.00pm</p>
-						<a href="#" class="hdrcntrbox1__h">info@domain.com</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="hdrbtm">
-			<div class="container">
-				<div class="hdrbtm__wrpr flex-i justify-between">
-					<ul class="hdrbtmList flex-i">
-						<li class="hdrbtmList__item active">
-							<a href="#" class="hdrbtmList__link">Home</a>
-						</li>
-						<li class="hdrbtmList__item">
-							<a href="#0" class="hdrbtmList__link">
-								About us
-								<i class="fa-sharp fa-solid fa-chevron-down"></i>
-							</a>
-							<ul class="navdrp">
-								<li class="navdrp__item">
-									<a href="#" class="navdrp__link">link</a>
-								</li>
-								<li class="navdrp__item">
-									<a href="#" class="navdrp__link">link</a>
-								</li>
-							</ul>
-						</li>
-						<li class="hdrbtmList__item">
-							<a href="#" class="hdrbtmList__link">Prectice area</a>
-						</li>
-						<li class="hdrbtmList__item">
-							<a href="#" class="hdrbtmList__link">Attorneys</a>
-						</li>
-						<li class="hdrbtmList__item">
-							<a href="#" class="hdrbtmList__link">Faq</a>
-						</li>
-						<li class="hdrbtmList__item">
-							<a href="#" class="hdrbtmList__link">Blog</a>
-						</li>
-					</ul>
-					<a href="#" class="contactbtn">Free Consultation</a>
-					<div class="navbtn">
-						<span class="navbtn__icon-bar"></span>
-						<span class="navbtn__icon-bar"></span>
-						<span class="navbtn__icon-bar"></span>
-					</div>
-				</div>
-			</div>
+		</nav>
+		<div class="logobox">
+			<a href="#" class="logo">
+				<img src="assets/images/legal-house-logo.png" alt="" class="logo__img">
+			</a>
 		</div>
 		<div class="mobileNav">
-			<i class="fa-light fa-rectangle-xmark nav-close"></i>
-			<a href="#" class="mobileNav__logo">
-				<img src="assets/images/central-logo.png" alt="" class="mobileNav__img">
-			</a>
+			<div class="mobileNavhdr flex-i justify-between">
+				<a href="#" class="mobileNav__logo">
+					<img src="assets/images/legal-house-logo.png" alt="" class="mobileNav__img">
+				</a>
+				<i class="fa-light fa-rectangle-xmark nav-close"></i>
+			</div>
+			
 			<ul class="mobileNavlist">
 				<li class="mobileNavlist__item active">
-					<a href="#" class="mobileNavlist__link">HOME</a>
+					<a href="#" class="mobileNavlist__link">الرئيسية</a>
 				</li>
-				<li class="mobileNavlist__item">
-					<a href="#" class="mobileNavlist__link">About</a>
+				<li class="mobileNavlist__item active">
+					<a href="#" class="mobileNavlist__link">من نحن</a>
 				</li>
-				<li class="mobileNavlist__item">
-					<a href="#" class="mobileNavlist__link">Prectice Area</a>
+				<li class="mobileNavlist__item active">
+					<a href="#" class="mobileNavlist__link">التدريب</a>
 				</li>
-				<li class="mobileNavlist__item dropdown">
-					<a href="#0" class="mobileNavlist__link">
-						PROJECTS
-						<i class="fa-sharp fa-solid fa-chevron-right mblnavdrpbtn"></i>
-					</a>
-					<ul class="mobileNavlistDrp">
-						<li class="mobileNavlistDrp__item">
-							<a href="#" class="mobileNavlistDrp__link">link1</a>
-						</li>
-						<li class="mobileNavlistDrp__item">
-							<a href="#" class="mobileNavlistDrp__link">link2</a>
-						</li>
-					</ul>
+				<li class="mobileNavlist__item active">
+					<a href="#" class="mobileNavlist__link">الإستشارات</a>
 				</li>
-				<li class="mobileNavlist__item">
-					<a href="#" class="mobileNavlist__link">team</a>
+				<li class="mobileNavlist__item active">
+					<a href="#" class="mobileNavlist__link">خدماتنا</a>
 				</li>
-				<li class="mobileNavlist__item">
-					<a href="#" class="mobileNavlist__link">Blog</a>
+				<li class="mobileNavlist__item active">
+					<a href="#" class="mobileNavlist__link">الفعاليات</a>
 				</li>
-				<li class="mobileNavlist__item">
-					<a href="#" class="mobileNavlist__link">Contact</a>
+				<li class="mobileNavlist__item active">
+					<a href="#" class="mobileNavlist__link">البحث والنشر العلمي</a>
+				</li>
+				<li class="mobileNavlist__item active">
+					<a href="#" class="mobileNavlist__link">المدونة</a>
+				</li>
+				<li class="mobileNavlist__item active">
+					<a href="#" class="mobileNavlist__link">المعرض</a>
+				</li>
+				<li class="mobileNavlist__item active">
+					<a href="#" class="mobileNavlist__link">تواصل معنا</a>
 				</li>
 			</ul>
 			<ul class="mblsmlist flex-i">
 				<li class="mblsmlist__item">
-					<a href="#" class="mblsmlist__link">
+					<a href="#" class="mblsmlist__link flex-a r-50">
 						<i class="fa-brands fa-facebook-f"></i>
 					</a>
 				</li>
 				<li class="mblsmlist__item">
-					<a href="#" class="mblsmlist__link">
+					<a href="#" class="mblsmlist__link flex-a r-50">
 						<i class="fa-brands fa-twitter"></i>
 					</a>
 				</li>
 				<li class="mblsmlist__item">
-					<a href="#" class="mblsmlist__link">
+					<a href="#" class="mblsmlist__link flex-a r-50">
 						<i class="fa-brands fa-instagram"></i>
 					</a>
 				</li>
 				<li class="mblsmlist__item">
-					<a href="#" class="mblsmlist__link">
+					<a href="#" class="mblsmlist__link flex-a r-50">
 						<i class="fa-brands fa-linkedin"></i>
 					</a>
 				</li>
 			</ul>
 		</div>
 	</header>
-	<section class="main-slider revolution-slider">
-		<div class="tp-banner-container">
-			<div class="tp-banner">
-				<ul>
-					<li data-transition="fade" data-slotamount="1" data-masterspeed="1000"
-						 data-saveperformance="off">
-						<img src="assets/images/slider/1.jpg" alt="" data-bgposition="center top" data-bgfit="cover"
-							data-bgrepeat="no-repeat">
-						<div class="tp-caption sfl  tp-resizeme" data-x="right"  data-hoffset="-15" data-y="center"
-							data-voffset="-120" data-speed="1500" data-start="500" data-easing="easeOutExpo"
-							data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3"
-							data-endspeed="1200" data-endeasing="Power4.easeIn">
-							<h1 class="slhdng">We Are Certified Family <br>Law Specialists</h1>
-						</div>
-						<div class="tp-caption sfr  tp-resizeme" data-x="right" data-hoffset="-80" data-y="center"
-							data-voffset="20" data-speed="1500" data-start="1000" data-easing="easeOutExpo"
-							data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3"
-							data-endspeed="1200" data-endeasing="Power4.easeIn">
-							<div class="slpara">
-								We Have Helped Thousands of People to Get Relief From National
-								Wide Fights <br>WrongfullDenials. Now They Trusted Our Attorneys.
-							</div>
-						</div>
-	
-						<div class="tp-caption sfl tp-resizeme" data-x="right" data-hoffset="-200" data-y="center"
-							data-voffset="110" data-speed="1500" data-start="1500" data-easing="easeOutExpo"
-							data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3"
-							data-endspeed="1200" data-endeasing="Power4.easeIn">
-							<div class="text-center">
-								<a href="#" class="slbtn">
-									Contact Our Attorneys
-								</a>
-							</div>
-						</div>
-	
-						<div class="tp-caption sfr tp-resizeme" data-x="right" data-hoffset="-200" data-y="center"
-							data-voffset="180" data-speed="1500" data-start="2000" data-easing="easeOutExpo"
-							data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3"
-							data-endspeed="1200" data-endeasing="Power4.easeIn">
-							<a href="practice-areas.html" class="slbtmlink">
-								View Our Practice Areas
-							</a>
-						</div>
-	
-					</li>
-	
-	
-					<li data-transition="fade" data-slotamount="1" data-masterspeed="1000"
-						data-saveperformance="off">
-						<img src="assets/images/slider/2.jpg" alt="" data-bgposition="left top" data-bgfit="cover"
-							data-bgrepeat="no-repeat">
-	
-						<div class="tp-caption sfl tp-resizeme" data-x="left" data-hoffset="-270" data-y="bottom"
-							data-voffset="30" data-speed="1500" data-start="500" data-easing="easeOutExpo"
-							data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3"
-							data-endspeed="1200" data-endeasing="Power4.easeIn">
-							<div class="logo-image">
-								<img src="assets/images/slider/man-image.png" alt="">
-							</div>
-						</div>
-	
-						<div class="tp-caption sfr tp-resizeme" data-x="center" data-hoffset="0" data-y="center"
-							data-voffset="-140" data-speed="1500" data-start="1000" data-easing="easeOutExpo"
-							data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3"
-							data-endspeed="1200" data-endeasing="Power4.easeIn">
-							<div class="logo-image">
-								<img src="assets/images/central-logo.png" alt="">
-							</div>
-						</div>
-	
-						<div class="tp-caption sfl tp-resizeme" data-x="center" data-hoffset="0" data-y="center"
-							data-voffset="0" data-speed="1500" data-start="1000" data-easing="easeOutExpo"
-							data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3"
-							data-endspeed="1200" data-endeasing="Power4.easeIn">
-							<h1 class="slhdng">Senior Defence Lawyer <br>L.K. Antony</h1>
-						</div>
-	
-						<div class="tp-caption sfr tp-resizeme" data-x="center" data-hoffset="0" data-y="center"
-							data-voffset="110" data-speed="1500" data-start="1000" data-easing="easeOutExpo"
-							data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3"
-							data-endspeed="1200" data-endeasing="Power4.easeIn">
-							<a class="sl-phn">Call: +321 589 2369</a>
-						</div>
-	
-						<div class="tp-caption sfl tp-resizeme" data-x="center" data-hoffset="0" data-y="center"
-							data-voffset="180" data-speed="1500" data-start="1000" data-easing="easeOutExpo"
-							data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3"
-							data-endspeed="1200" data-endeasing="Power4.easeIn">
-							<div class="text-center">
-								<a href="#" class="slbtn">
-									Make an Appoinment
-								</a>
-							</div>
-						</div>
-					</li>
-					<li data-transition="fade" data-slotamount="1" data-masterspeed="1000"
-						 data-saveperformance="off">
-						<img src="assets/images/slider/3.jpg" alt="" data-bgposition="right top" data-bgfit="cover"
-							data-bgrepeat="no-repeat">
-	
-						<div class="tp-caption sfl tp-resizeme" data-x="left" data-hoffset="15" data-y="center"
-							data-voffset="-150" data-speed="1500" data-start="500" data-easing="easeOutExpo"
-							data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3"
-							data-endspeed="1200" data-endeasing="Power4.easeIn">
-							<div class="slsub-hdng">We Are Lawyer Justice</div>
-						</div>
-	
-						<div class="tp-caption sfl tp-resizeme" data-x="left" data-hoffset="15" data-y="center"
-							data-voffset="-50" data-speed="1500" data-start="1000" data-easing="easeOutExpo"
-							data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3"
-							data-endspeed="1200" data-endeasing="Power4.easeIn">
-							<h1 class="slhdng slhdng2">Attrorneys Fighting For <br>Your Freedom</h1>
-						</div>
-	
-						<div class="tp-caption sfl tp-resizeme" data-x="left" data-hoffset="15" data-y="center"
-							data-voffset="60" data-speed="1500" data-start="1500" data-easing="easeOutExpo"
-							data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3"
-							data-endspeed="1200" data-endeasing="Power4.easeIn">
-							<div class="slpara slpara2">
-								We Have Helped Thousands of People to Get Relief From National Wide Fights
-								<br>WrongfullDenials. Now They Trusted Our Attorneys.
-							</div>
-						</div>
-	
-						<div class="tp-caption sfl tp-resizeme" data-x="left" data-hoffset="15" data-y="center"
-							data-voffset="150" data-speed="1500" data-start="2000" data-easing="easeOutExpo"
-							data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3"
-							data-endspeed="1200" data-endeasing="Power4.easeIn">
-							<a href="#" class="slbtn">
-								Contact Our Attorneys
-							</a>
-						</div>
-	
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
-<script src="assets/js/public/revolution.min.js"></script>
 <script src="assets/js/public/scripts.js"></script>
 <script src="assets/js/private/header3.js"></script>
 </body>

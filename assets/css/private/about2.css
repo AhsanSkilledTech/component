@@ -1,0 +1,228 @@
+:root{
+    --bg-pearl: #EFF2F3;
+    --main: #AB965C;
+    --text-turquoise-blue: #4BCFFD;
+}
+body{
+    font-family: var(--cairo);
+}
+.about{
+    padding: 80px 0;
+}
+.aboutbtm{
+    width: 100%;
+    height: 70px;
+    background-color: #FBF9F9;
+}
+.abtbox1{
+    width: 70%;
+    position: relative;
+    z-index: 0;
+    padding: 0 0 100px 0;
+}
+.abtbox1__bg{
+    position: absolute;
+    bottom: -40px;
+    right: -30px;
+    width: 350px;
+    z-index: -1;
+    height: auto;
+}
+.abtboxinn {
+    max-width: 800px;
+    padding: 40px 60px 50px 60px;
+    border-radius: 25px;
+    background-color: rgba(245, 242, 242,0.5);
+    backdrop-filter: blur(0.5px);
+}
+.abtboxinn__p{
+    font-size: 22px;
+    line-height: 2.2;
+    font-weight: 600;
+    position: relative;
+    z-index: 0;
+}
+.abtboxinn__p::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url(../../images/para-arrow2.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: -10px;
+    right: -30px;
+}
+.abtboxinn__p::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url(../../images/para-arrow.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+}
+.abtbox2{
+    text-align: center;
+    width: 340px;
+}
+.abtbox2-imgbox{
+    width: 340px;
+    height: 340px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(251, 249, 249,0.82);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.abtbox2-imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.abtbox2__h{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2C2A2A;
+    margin-bottom: 15px;
+}
+.abtbox2__p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #989393;
+}
+@media(max-width:1799px){
+    .about {
+        padding: 60px 0;
+    }
+}
+@media(max-width:1399px){
+    .abtboxinn {
+        max-width: 680px;
+        padding: 40px 45px 45px 45px;
+    }
+    .abtboxinn__p {
+        font-size: 19px;
+    }
+    .abtbox2 {
+        width: 300px;
+    }
+    .abtbox1__bg {
+        bottom: -30px;
+        right: -20px;
+        width: 270px;
+        z-index: -1;
+        height: auto;
+    }
+    .abtbox2-imgbox {
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+    }
+    .abtbox2__h {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    .abtbox2__p {
+        font-size: 15px;
+    }
+    .about {
+        padding: 50px 0;
+    }
+}
+@media(max-width:1199px){
+    .abtboxinn {
+        max-width: 585px;
+    }
+}
+@media(max-width:1023px){
+    .about-wrpr{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 35px;
+    }
+    .abtbox1 {
+        padding: 0 0 65px 0;
+    }
+    .abtboxinn,
+    .abtbox1{
+        width: 100%;
+        max-width: 100%;
+    }
+    .abtbox2-imgbox {
+        width: 250px;
+        height: 250px;
+        padding: 20px;
+    }
+    .abtbox2__p,
+    .abtbox2__h{
+        text-align: initial;
+    }
+}
+@media(max-width:767px){
+    .abtbox2-imgbox {
+        width: 200px;
+        height: 200px;
+        padding: 15px;
+    }
+}
+@media(max-width:539px){
+    .about {
+        padding: 35px 0;
+    }
+    .abtboxinn__p {
+        font-size: 16px;
+    }
+    .abtboxinn {
+        padding: 29px 30px 25px 30px;
+        border-radius: 15px;
+    }
+    .abtboxinn__p::before {
+        width: 30px;
+        height: 30px;
+        top: -10px;
+        right: -18px;
+    }
+    .abtboxinn__p::after {
+        width: 30px;
+        height: 30px;
+        bottom: -10px;
+        left: -18px;
+    }
+    .abtbox1__bg {
+        bottom: -20px;
+        right: -10px;
+        width: 200px;
+    } 
+}
+/* ltr */
+.ltr .abtbox1__bg{
+    left: -30px;
+    right: auto;
+    transform: scaleX(-1);
+}
+@media(max-width:767px){
+    .ltr .abtbox1__bg {
+        left: -10px;
+    }
+    .aboutbtm{
+        height: 40px;
+    }
+}
+/* dark  */
+.dark .aboutbtm,
+.dark .abtbox2-imgbox,
+.dark .abtboxinn {
+    background-color: rgba(5, 5, 5,0.2);
+}
+.dark .abtbox2__p,
+.dark .abtbox2__h,
+.dark .abtboxinn__p{
+    color: #fff;
+}

@@ -1,0 +1,216 @@
+
+.banner{
+    background: url(../../images/banner2.jpg) no-repeat center right;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.bannerboxsvg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+}
+.customLineAnim{
+    animation-name: customLineAnim;
+}
+.bannerbox{
+    position: relative;
+    z-index: 9;
+}
+@keyframes customLineAnim{
+    0% {
+        stroke-dasharray: 1600;
+        stroke-dashoffset: 1600;
+    }
+    100% {
+        stroke-dasharray: 2500;
+        stroke-dashoffset: 1600;
+    }
+}
+
+.banner-wrapper{
+    position: relative;
+    z-index: 0;
+    padding: 105px 0 145px 0;
+    margin: 0 auto;
+}
+.banner-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 89%;
+    width: 100%;
+    height: calc( 100% + 150px);
+    background: #FFF;
+    z-index: 0;
+    transform: translate3d(0, -50%, 0);
+}
+.bannerbox{
+    width: 460px;
+    position: relative;
+    z-index: 99;
+}
+.bannerbox__h{
+    color: #969696!important;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: var(--lato);
+    margin-bottom: 10px;
+}
+.bannerbox__h2{
+    color: #212529;
+    font-weight: 900;
+    font-size: 2.1rem;
+    font-family: var(--lato);
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.bannerbox__btn{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: var(--lato);
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    color: #fff;
+    background-color: #1c5fa8;
+    padding: 20px 40px;
+    border-radius: 10px;
+    column-gap: 10px;
+}
+.bannerbox__btn:hover{
+    color: #fff;
+    background-color: #2172c9;
+}
+@media(max-width:1599px){
+    .banner-wrapper {
+        padding: 100px 0 130px 0;
+    }
+    .bannerbox__h {
+        line-height: 1.6;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    .bannerbox__h2 {
+        font-size: 2rem;
+        line-height: 1.6;
+        margin-bottom: 50px;
+    }
+    .bannerbox__btn {
+        font-size: 0.9rem;
+        padding: 15px 30px;
+        border-radius: 7px;
+        column-gap: 5px;
+    }
+  
+}
+@media(max-width:1399px){
+    .bannerbox {
+        width: 380px;
+    }
+    .banner-wrapper {
+        padding: 70px 0 92px 0;
+    }
+    .bannerbox__h2 {
+        font-size: 1.8rem;
+        line-height: 1.6;
+        margin-bottom: 50px;
+    }
+}
+@media(max-width:1199px){
+    .banner-wrapper::before {
+        right: 88%;
+    }
+    .rtl .banner-wrapper::before{
+        right: auto;
+        left: 88%;
+    }
+}
+@media(max-width:767px){
+    .banner-wrapper::before {
+        right: 82%;
+    }
+    .rtl .banner-wrapper::before{
+        right: auto;
+        left: 82%;
+    }
+}
+@media(max-width:539px){
+    .bannerboxsvg{
+        display: none;
+    }
+    .banner{
+        background: none;
+        background-color: #fff;
+    }
+    .bannerbox{
+        width: 100%;
+    }
+    .bannerbox__h {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+    .bannerbox__h2 {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    .bannerbox__btn {
+        font-size: 0.7rem;
+        padding: 12px 20px;
+        border-radius: 5px;
+        column-gap: 5px;
+    }
+    .banner-wrapper {
+        padding: 50px 0 65px 0;
+    }
+}
+.rtl .banner-wrapper::before{
+    right: auto;
+    left: 88%;
+}
+.rtl .banner{
+    background: url(../../images/banner2-rtl.jpg) no-repeat center left;
+    background-size: cover;
+}
+.rtl .bannerboxsvg{
+    left: auto;
+    right: 0;
+    transform: scaleX(-1);
+}
+.rtl .bannerbox__btn i{
+    transform: scaleX(-1);
+}
+@media(max-width:1199px){
+    .rtl .banner-wrapper::before{
+        right: auto;
+        left: 88%;
+    }
+}
+@media(max-width:767px){
+    .rtl .banner-wrapper::before{
+        right: auto;
+        left: 82%;
+    }
+}
+@media(max-width:539px){
+    .rtl .banner{
+        background: none;
+    }
+}
+
+
+.dark .bannerboxsvg .path1{
+    fill: var(--dark-background-color1);
+}
+.dark .banner-wrapper::before{
+    background-color: var(--dark-background-color1);
+    right: auto;
+}
+.dark .bannerbox__h2{
+    color: #fff;
+}

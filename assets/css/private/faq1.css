@@ -173,3 +173,25 @@
         height: 40px;
     }
 }
+.rtl .faqbox-mini i{
+    transform: scaleX(-1);
+}
+.dark .faq{
+    background-color: var(--dark-background-color1);
+}
+.dark .faqbox-content__p,
+.dark .accordian-box__p{
+    color: var(--dark-para-color);
+}
+.dark .accordian-box__h,
+.dark .faqbox-content__h3,
+.dark .faqbox__h2{
+    color: #fff;
+}
+.dark .faqbox2{
+    background-color: var(--dark-background-color1);
+}
+.dark .accordian-box__body,
+.dark .accordian-box__header{
+    border-color: var(--dark-border-color2);
+}
