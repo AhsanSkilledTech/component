@@ -3,6 +3,9 @@
     --secondry-color: #1F3142;
     --tertiary-color: #315B72;
 }
+body{
+    font-family: var(--gilroy);
+}
 .header{
     position: absolute;
     top: 0;
@@ -43,7 +46,6 @@
     text-transform: uppercase;
     font-size: 1rem;
     color:#fff;
-    font-family: var(--gilroy);
     font-weight: 500;
 }
 .header.sticky .navlist__link{

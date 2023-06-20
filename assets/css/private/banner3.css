@@ -1,7 +1,5 @@
 :root{
-    --bg-pearl: #EFF2F3;
     --main: #AB965C;
-    --text-turquoise-blue: #4BCFFD;
 }
 body{
     font-family: var(--cairo);

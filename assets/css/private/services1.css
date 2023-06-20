@@ -3,6 +3,9 @@
     --secondry-color: #1F3142;
     --tertiary-color: #315B72;
 }
+body{
+    font-family: var(--gilroy);
+}
 .services{
     margin-left: 150px;
     padding: 40px 0 60px 0;
@@ -24,7 +27,6 @@
     font-weight: bold;
     display: inline-block;
     text-transform: uppercase;
-    font-family: var(--gilroy);
 }
 .serSliderBox{
     width: 100%;
@@ -45,7 +47,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-family: var(--gilroy);
     z-index: 99;
     text-align: center;
 }

@@ -2,6 +2,9 @@
     --main: #f99828;
     --contrast: #18212e;
 }
+body{
+    font-family: var(--nunito-sans);
+}
 .slide{
 	position: relative;
     z-index: 0;
@@ -54,7 +57,7 @@
 	font-size: 64px;
     line-height: 1.1;
     font-weight: bold;
-    font-family: var(--nunito-sans);
+    
     margin-bottom: 40px;
 }
 .slide__p{
@@ -75,7 +78,6 @@
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: var(--nunito-sans);
     transition: all 0.3s ease-in-out 0.1s;
 }
 .slide__btn:before {

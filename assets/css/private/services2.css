@@ -2,6 +2,9 @@
     --main: #87ab42;
     --contrast: #18212e;
 }
+body{
+    font-family: var(--dm-sans);
+}
 .projects{
     padding: 40px 0;
 }
@@ -12,7 +15,6 @@
     color: var(--main);
     font-weight: 700;
     text-align: center;
-    font-family: var(--dm-sans);
     text-transform: uppercase;
 }
 .projects__h2{
@@ -22,7 +24,6 @@
     margin-bottom: 80px;
     text-align: center;
     font-weight: 700;
-    font-family: var(--dm-sans);
 }
 .dark .projects__h2{
     color: #fefefe;
@@ -124,7 +125,6 @@
     line-height: 1.3;
     color: #fefefe;
     text-transform: uppercase;
-    font-family: var(--dm-sans);
     margin-bottom: 3px;
 }
 .proCard__content-h2{
@@ -132,7 +132,6 @@
     font-weight: 700;
     line-height: 1.1;
     color: #fefefe;
-    font-family: var(--dm-sans);
 }
 .pro2sliderarr{
     width: 45px;

@@ -2,6 +2,9 @@
     --main: #87ab42;
     --contrast: #18212e;
 }
+body{
+    font-family: var(--dm-sans);
+}
 .about{
     padding: 120px 0;
     background-position: bottom right;
@@ -28,7 +31,6 @@
     z-index: 9;
     transform-origin: top left;
     transform: rotate(90deg);
-    font-family: var(--dm-sans);
     line-height: 1;
     text-transform: uppercase;
 }
@@ -94,14 +96,12 @@
     letter-spacing: 1px;
     color: var(--main);
     font-weight: bold;
-    font-family: var(--dm-sans);
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 .bannerbox2__h{
     color: #000000;
     font-size: 48px;
-    font-family: var(--dm-sans);
     margin-bottom: 30px;
     font-weight: bold;
 }
@@ -110,12 +110,10 @@
     line-height: 1.8;
     color: #7c858c;
     font-weight: 500;
-    font-family: var(--dm-sans);
     margin-bottom: 50px;
 }
 .bannerbox2__h3{
     color: var(--main);
-    font-family: var(--dm-sans);
     font-size: 22px;
     font-weight: 600;
     line-height: 1.8;
@@ -171,7 +169,6 @@
     z-index: -1;
     transition: 0.3s cubic-bezier(0.785,0.135,0.15,0.86);
     background-color: var(--main);
-    /* border-radius: 5px 5px 0 0; */
 }
 .about__btn:hover:after,
 .about__btn:hover:before{

@@ -3,6 +3,9 @@
     --secondry-color: #1F3142;
     --tertiary-color: #315B72;
 }
+body{
+    font-family: var(--gilroy);
+}
 .footer{
     background-color: var(--secondry-color);
     padding: 50px 0 30px 0;
@@ -15,7 +18,6 @@
     font-size: 1rem;
     color: #fff;
     text-transform: uppercase;
-    font-family: var(--gilroy);
 }
 .footer__h{
     font-size: 1.1rem;
@@ -23,7 +25,6 @@
     text-transform: uppercase;
     font-weight: 600;
     color: #fff;
-    font-family: var(--gilroy);
 }
 .footerbox{
     display: flex;
@@ -39,7 +40,6 @@
     width: calc(100% - 40px);
     font-size: 0.95rem;
     color: #fff;
-    font-family: var(--gilroy);
     font-weight: 500;
 }
 .ftrlist{
@@ -85,7 +85,6 @@
     font-size: 0.9rem;
     padding-top: 10px;
     font-weight: 500;
-    font-family: var(--gilroy);
 }
 @media(max-width:767px){
     .footer__logo {

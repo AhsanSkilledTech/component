@@ -2,6 +2,9 @@
     --main: #f99828;
     --contrast: #18212e;
 }
+body{
+    font-family: var(--nunito-sans);
+}
 .headertop{
     position: relative;
     z-index: 0;
@@ -36,7 +39,6 @@
 }
 .headertop__p{
     font-size: 1rem;
-    font-family: var(--nunito-sans);
     color: var(--white);
 }
 .headertop__right{
@@ -70,7 +72,6 @@
 }
 .lang__text {
     color: #fff;
-    font-family: var(--nunito-sans);
     font-size: 0.9rem;
 }
 .darklight{
@@ -139,13 +140,11 @@
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 2px;
-    font-family: var(--nunito-sans);
 }
 .hdrcntrbox__p{
     color: #777777;
     font-size: 0.95rem;
     font-weight: 500;
-    font-family: var(--nunito-sans);
 }
 /* header center end */
 .hdrbtm{
@@ -183,7 +182,6 @@
     font-weight: bold;
     text-transform: uppercase;
     transition: all 500ms ease;
-    font-family:  var(--nunito-sans);
     color: #222222;
     display: flex;
     align-items: center;
@@ -231,7 +229,6 @@
     font-weight: 600;
     text-transform: capitalize;
     transition: all 500ms ease;
-    font-family:  var(--nunito-sans);
 }
 .navdrp__link:hover{
     color: var(--main);
@@ -304,7 +301,6 @@
     height: 45px;
     font-size: 0.9rem;
     padding: 10px 15px;
-    font-family:  var(--nunito-sans);
 }
 .searchform__btn{
     width: 45px;
@@ -335,7 +331,6 @@
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: var(--nunito-sans);
     transition: all 0.3s ease-in-out 0.1s;
 }
 .hdrbtn:before {
@@ -608,7 +603,6 @@
         height: 40px;
         font-size: 0.9rem;
         padding: 15px 15px;
-        font-family: var(--nunito-sans);
     }
     .searchform__btn{
         width: 40px;

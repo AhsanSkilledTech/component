@@ -8,7 +8,6 @@
     display: inline-block;
     text-transform: uppercase;
     color: #fff;
-    font-family: var(--gilroy);
     margin-bottom: 20px;
 }
 .vision__h3{
@@ -18,14 +17,12 @@
     font-weight: 500;
     line-height: 1.5;
     max-width: 1050px;
-    font-family: var(--gilroy);
     letter-spacing: 0.2px;
 }
 .vision__p{
     font-size: 1rem;
     color: #fff;
     max-width: 1050px;
-    font-family: var(--gilroy);
     letter-spacing: 0.2px;
 }
 @media(max-width:767px){

@@ -12,7 +12,6 @@
     font-weight: 700;
     display: inline-block;
     text-transform: uppercase;
-    font-family: var(--gilroy);
     display: inline-flex;
     align-items: flex-end;
     column-gap: 10px;
@@ -86,7 +85,6 @@
     color: #fff;
     font-weight: 500;
     letter-spacing: 0px;
-    font-family: var(--gilroy);
     margin-bottom: 10px;
     font-size: 1.75rem;
     text-transform: uppercase;

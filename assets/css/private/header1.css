@@ -1,9 +1,8 @@
 :root {
   --main:#B68C5A;
 }
-
-.header {
-  /* header top end */
+body{
+  font-family: var(--libre);
 }
 .header .headertop {
   background-color: #0B2239;
@@ -17,7 +16,6 @@
 .header .headertop .headertop-wrpr .headertop__link span {
   font-size: 0.97rem;
   color: #fff;
-  font-family: var(--libre);
 }
 @media (max-width: 1599px) {
   .header .headertop .headertop-wrpr .headertop__link span {
@@ -178,7 +176,6 @@
 .header .headerbottm .navlist .navlist__item .navlist__link {
   color: #0B2239;
   font-size: 1.05rem;
-  font-family: var(--libre);
   font-weight: bold;
   text-transform: capitalize;
 }
@@ -240,7 +237,6 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 0.95rem;
   color: #fff;
-  font-family: var(--libre);
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 1799px) {
@@ -326,7 +322,6 @@
   height: 60px;
   border: 1px solid #fff;
   padding: 10px 15px;
-  font-family: var(--libre);
   color: rgba(255, 255, 255, 0.8235294118);
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.089);
@@ -379,7 +374,6 @@
 }
 .lang .lang__box .lang__text {
   color: #0B2239;
-  font-family: var(--libre);
   font-size: 1rem;
 }
 
