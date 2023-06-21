@@ -1,0 +1,7 @@
+:root{
+    --main: #f99828;
+    --contrast: #18212e;
+}
+body{
+    font-family: var(--nunito-sans);
+}
