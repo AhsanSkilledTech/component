@@ -479,7 +479,7 @@ body{
     color: #fff;
 }
 .dark .inputF{
-    background-color: var(--dark-background-color3);
+    background-color: var(--dark-background-color1);
     border-color: transparent;
     color: #fff;
 }
@@ -496,7 +496,7 @@ body{
 }
 .dark .mobileNavlist,
 .dark .mobileNavhdr{
-    border-color: var(--dark-border-color2);
+    border-color: var(--dark-border-color);
 }
 .dark .hdrsmlist__link{
     background-color: var(--dark-background-color2);

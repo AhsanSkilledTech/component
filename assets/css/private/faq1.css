@@ -190,5 +190,5 @@ body{
 }
 .dark .accordian-box__body,
 .dark .accordian-box__header{
-    border-color: var(--dark-border-color2);
+    border-color: var(--dark-border-color);
 }

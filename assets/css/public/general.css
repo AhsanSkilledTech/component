@@ -1,6 +1,11 @@
 :root{
     --main: #f99828;
     --contrast: #18212e;
+    /* dark option 1 */
+    --dark-background-color1: #15212D;
+    --dark-background-color2: #1A2A3B;
+    --dark-border-color:#343434;
+    --dark-para-color: #cfcfcf;
 }
 body{
     font-family: var(--nunito-sans);

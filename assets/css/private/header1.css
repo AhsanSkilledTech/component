@@ -598,7 +598,7 @@ body.dark .searchbtn__img {
     background-color: var(--dark-background-color2);
   }
   .dark .header .headerbottm .navlist .navlist__item {
-    border-bottom: 1px solid var(--dark-border-color2);
+    border-bottom: 1px solid var(--dark-border-color);
   }
   .header .headerbottm .navlist .navlist__item:nth-last-child(1) {
     border-bottom: none;

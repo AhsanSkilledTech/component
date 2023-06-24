@@ -282,6 +282,6 @@ body{
 }
 .dark .newsArr{
     background-color: var(--dark-background-color2);
-    border-color: var(--dark-border-color2);
+    border-color: var(--dark-border-color);
     color: #fff;
 }

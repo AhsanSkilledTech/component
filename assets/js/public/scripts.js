@@ -11,5 +11,10 @@ $(document).ready(function() {
 		);
 		wow.init();
 	}
+	
+});
+
+$('#res').on('click', () => {
+	$(window).trigger('resize');
 });
 
